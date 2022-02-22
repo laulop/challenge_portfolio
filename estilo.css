@@ -1,0 +1,389 @@
+/**************
+GENERAL
+**************/
+
+ body {
+    margin: 0;
+    Width: 1440px;
+    Height: 5020px;
+    position: absolute;
+    width: 1440px;
+    height: 5020px;
+    left: 0px;
+    top: 0px;
+
+/* NEGRO 05% */
+
+background: #F5F5F5;
+}
+
+
+section h1 {
+    /* Hola, mi nombre es Fulana de Tal y construyo paginas web */
+
+
+position: static;
+width: 751px;
+height: 122px;
+left: 0px;
+top: 0px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 52px;
+line-height: 61px;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 24px 0px;
+  }
+
+  section p {
+    position: static;
+width: 751px;
+height: 52px;
+left: 0px;
+top: 146px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 26px;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 24px 0px;
+  }
+
+
+  #wrapper section li {
+      list-style: none;
+      text-align: left;
+      display: inline;
+      
+  }
+   section  a {
+       /* Github */
+
+
+position: static;
+width: 50px;
+height: 19px;
+left: 0px;
+top: 2.5px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 4px;
+}
+
+  
+a {
+  text-decoration:none;
+}
+
+
+
+
+/**************
+HEADING
++++++++++++++*/
+
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+
+#logo {
+  text-align:left;
+  position: static;
+  width: 102px;
+  height: 19px;
+  top: 2.5px;
+  
+}
+
+/* Logo text */
+h1 {
+    position: static;
+    width: 200px;
+    height: 19px;
+    left: 32px;
+    top: 2.5px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+/* identical to box height */
+
+
+/* Preto/100% */
+
+    color: #464646;
+
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+
+/**************
+NAVIGATION
++++++++++++++*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+
+    position: static;
+    width: 1136px;
+    height: 88px;
+    left: 152px;
+    top: 0px;
+
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 32px 0px;
+
+/* Preto/05% */
+
+    background: #F5F5F5;
+
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    
+}
+
+nav li {
+    display: inline-block;
+
+}
+
+nav a {
+    font-weight: 800;
+    padding: 15px 10px;
+}
+
+
+li a {
+    position: static;
+    left: 0px;
+    top: 0px;
+    
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    /* Preto/100% */
+    
+    color: #464646;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 5px;
+}
+
+
+
+/**************
+FOOTER
++++++++++++++*/
+
+
+
+footer{
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    padding-top: 20px;
+    color: rgb(8, 8, 8);
+}
+
+.social-icon {
+    width: 10px;
+    height: 10px;
+    padding: 0 5px;
+}
+
+
+
+/**************
+PAGE: PORTFOLIO
++++++++++++++*/
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #f5f5f5;
+    color: #bdc3c7;
+}
+
+#gallery li a p{
+    margin: 0;
+    padding: 5%;
+    font-size: 0.75em;
+    color: #bdc3c7;
+}
+
+
+/**************
+PAGE: ABOUT
++++++++++++++*/
+
+.profile-photo {
+    float: right;
+    border-radius: 100%;
+    position: static;
+    width: 368px;
+    height: 368px;
+    left: 768px;
+    top: 0px;
+
+    background: url(img/foto_perfil.jpg);
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 208px;
+}
+
+
+/**************
+PAGE: CONTACT
++++++++++++++*/
+
+.contact-info {
+    list-style: none;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+    background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+    background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+    background-image: url('../img/twitter.png');
+}
+
+
+/**************
+COLORS
++++++++++++++*/
+
+/* site body */
+
+
+/* Logo text */
+
+/* nav background on mobile */
+
+/* Links */
+a {
+    color: #464646;
+    
+}
+
+/* nav link */
+nav a, nav a:visited {
+    color: #464646;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+    color: #35e761;
+}
+
+
+
+
+
+
