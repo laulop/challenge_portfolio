@@ -1,49 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Laura López García | Designer</title>
-        <link rel="stylesheet" href="estilo.css">
-        <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-      </head>
-      <body>
-        <header>
-          <nav>
-          <a href="index.html" id="logo">
-            <h1>Laura López García</h1>
-            <ul>  
-              <li><a href="sobremi.html" class="selected">Sobre mi</a></li>
-              <li><a href="skills.html">Skills</a></li>
-              <li><a href="Hobbies.html">Hobbies</a></li>
-              <li><a href="Formacion.html">Formación</a></li>
-              <li><a href="Proyectos.html">Proyectos</a></li>
-              <li><a href="Contacto.html">lalopezgar@gmail.com</a></li>
-            </ul>
-          </nav>
-        </header>
-        
-        <div id="wrapper">
-            <section>
-              <img src="img/foto_perfil.jpg" alt="Fotografía Laura López García" class="profile-photo">
-            </section>
-            <section>
-                <h1>Hola, mi nombre es Laura López García y me dedico al desarrollo Front Ent.</h1>
-            </section>
-            <section>
-              <p>Tengo formación en el desarrollo web, mas especificamente el Front End y en la actualidad estoy participando del proyecto Oracle ONE en Alura Latam</p>
-            </section>
-            <section>
-                  <li><a href="https://github.com/laulop">Github<img src="img/vector_flecha.png" class="social-icon"></a></li>
-                  <li><a href="https://www.linkedin.com/in/lauralopezgarcia/">Linkedin<img src="img/vector_flecha.png" class="social-icon"></a></li>
-                  <li><a href="https://www.instagram.com/lairalop/">Instagram<img src="img/vector_flecha.png" class="social-icon"></a></li>
-                  <li><a href="https://github.com/laulop">Curriculo<img src="img/vector_flecha.png" class="social-icon"></a></li>  
-            </section>  
-</div>
-</body>
-<footer>
-  <p>Desarrollado por: Laura López García - 2022</p>
-</footer>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="./assets/css/barraNavegacion.css" type="text/css" />
+    <link rel="stylesheet"
+      href="./assets/css/menu/barraNavegacion-imagen.css" type="text/css"
+      
+    />
+    <link rel="stylesheet" href="./assets/css/menu/menu-item.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/presentacion.css" type="text/css"  />
+    <link rel="stylesheet"
+      href="./assets/css/presentacion/presentacion-titulo.css" type="text/css"
+      
+    />
+    <link rel="stylesheet"
+      href="./assets/css/presentacion/presentacion-resumen.css" type="text/css"
+      
+    />
+    <link rel="stylesheet"
+      href="./assets/css/presentacion/presentacion-imagen.css" type="text/css"
+      
+    />
+    <link rel="stylesheet"
+      href="./assets/css/presentacion/presentacion-contenido.css" type="text/css"
+      
+    />
+    <link rel="stylesheet" href="./assets/css/barraLinks.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/barraLinks/barraLinks-item.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/barraLinks/barraLinks-link.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/barraLinks/barraLinks-vector.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/sobremi.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/sobremi/sobremi-contenido.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/sobremi/sobremi-titulo.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/sobremi/sobremi-firma.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/skills/skills-titulo.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/skills/skills-contenido.css"  type="text/css" />
+    <link rel="stylesheet" href="./assets/css/item/item-box.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/item/item-content.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/item/item-image.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/item/item-name.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/hobbies.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/formacion.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/formacion/formacion-titulo.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/formacion/formacion-contenido.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/formacion/formacion-box.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/formacion/formacion-imagen.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/formacion/formacion-name.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/experiencia.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-titulo.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-contenido.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-descripcion.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-item.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-imagen.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-botonera.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-botones.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-nombre.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/contacto.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/contacto/contacto-contenido.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/contacto/contacto-descripcion.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/contacto/contacto-imagen.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/contacto/contacto-referencia.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/contacto/contacto-titulo.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/botonEnviar.css" type="text/css"  />
+    <link rel="stylesheet" href="./assets/css/footer.css" type="text/css" />
+    
+    <script
+      src="https://kit.fontawesome.com/49042185bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Laura López-Portafolio de Desarrolador</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="barraNavegacion">
+        <div class="logotop">
+          <div class="barraNavegacion__imagen"></div>
+          <h3 class="barraNavegacion__nombre">Laura López</h3>
+        </div>
+        <ul class="menu">
+          <li class="menu__item"><a href="#sobremi">Sobre mi</a></li>
+          <li class="menu__item"><a href="#skills">Skills</a></li>
+          <li class="menu__item"><a href="#hobbies">Hobbies</a></li>
+          <li class="menu__item"><a href="#formacion">Formación</a></li>
+          <li class="menu__item"><a href="#experiencia">Proyectos</a></li>
+          <li class="menu__item"><a href="lalopezgar@gmail.com">lalopezgar@gmail.com</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="presentacion">
+      <div class="presentacion__contenido">
+        <h1 class="presentacion__titulo">
+          Hola, mi nombre es Laura López y construyo páginas web
+        </h1>
+        <h3 class="presentacion__resumen">
+          Estudio programación de forma autodidacta y actualmente estoy
+          participando del proyecto Oracle ONE en Alura Latam.
+        </h3>
+        <ul class="barraLinks">
+          <li class="barraLinks__item">
+            <h4 class="barraLinks__link"><a target="_blank" href="https://github.com/laulop" >Github</a></h4>
+            <div class="barraLinks__vector"></div>
+          </li>
+          <li class="barraLinks__item">
+            <h4 class="barraLinks__link"><a target="_blank" href="https://www.linkedin.com/in/lauralopezgarcia/" >Linkedin</a></h4>
+            <div class="barraLinks__vector"></div>
+          </li>
+          <li class="barraLinks__item">
+            <h4 class="barraLinks__link"><a target="_blank" href="https://www.instagram.com/lairalop/">Instagram</a></h4>
+            <div class="barraLinks__vector"></div>
+          </li>
+          <li class="barraLinks__item">
+            <h4 class="barraLinks__link"><a href="https://www.linkedin.com/ambry/?x-li-ambry-ep=AQJwfi17G7yNogAAAX8y13l_hCcs_AT3coPZTAhi3JcDRL5aMTF4DCxOHHggBAIpBie6hRHdMYxzjot5Wps9-kcJsyua3Awd2F5hH-MVbutSpbss5WbLSQ7yj1asCmZcyefAtCl0JSl09hSe8SP-4qMxD_1HzIiQc4o1vKev5vD5lEQwF46lhpWvhb_8G-mmJ2o-iwRYt88mvFCxU6ZW0xOT9kVIXw4AnZ8yMfYrwjK6fp-_vSGtjJtK-yyOBYPRpo2OwR-wBFcbQWYMU264-X3LcLLCZjJcTHc7RjhWXyIqfYf3N4yCtsmIe6zA6NQIislEhvvCWXYTUIpThAW0ukVV4cVzjF7ZqazQjS0YCILQWADGRLaWEElcpEOMhs-6wRM9lpJUZU17qL50zB8Era4s3HkS0Y-csDpoE-9iWN1cVTfhRDVlpulMRFFxxrd9kbaBKvuo_QAjhzpv80ZAA1PaTItspfLLPcFbigjj8h7kICcpCYfKzpnFyKqnoV4zI2GSzKvXOB1wkECtlWe29jJvrZ1mGw7ubULuGhEHJVzswkAdEckvcSRdkuuEm6ONpwqRng&x-ambry-um-filename=Profile.pdf">Currículo</a></h4>
+            <div class="barraLinks__vector"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="presentacion__imagen--contenedor">
+      <div class="presentacion__imagen"></div>
+      </div>
+    </section>
+
+    <section class="sobremi" id="sobremi">
+      <h2 class="sobremi__titulo">Sobre mi</h2>
+      <p class="sobremi__contenido">
+        Desde muy chico siempre estuve en contacto con las computadoras desde
+        DOS y luego Windows 3.1. Con el tiempo fui adquiriendo conocimientos en
+        varios software de diseño con los cuales realizo trabajos de renders
+        para una arquitecta, (AutoCad, SketchUp, Fusion 360, Adobe Suite) y
+        producción musical (Ableton Live) debido a que soy musico. Tengo
+        conocimientos en Java y Front End (HTML,CSS, JavaScript) además de
+        manejar como segundo idioma el Ingles.<br />
+        <br />
+        Hoy, con 35 años me encuentro cursando el programa educativo Oracle ONE de
+        desarrollo de programación. Soy una persona que le gusta aprender cosas
+        nuevas sobre todo tecnologías, que sabe trabajar en equipo y a su vez me
+        considero emprendedor. Soy brewmaster con mi propio emprendimiento de
+        fabricación de cerveza artesanal al mismo tiempo que administro un
+        complejo turístico familiar y trabajo en el casino local como croupier.
+      </p>
+      <div class="sobremi__firma"></div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="skills__titulo">Skills</h2>
+
+      <div class="skills__contenido">
+        <div class="item__box">
+          <div class="item__content">
+            <i class="fab fa-java fa-2xl"></i>
+            <h4 class="item__name">Java</h4>
+          </div>
+        </div>
+        <div class="item__box">
+          <div class="item__content">
+            <i class="fab fa-html5 fa-2xl"></i>
+            <h4 class="item__name">Html5</h4>
+          </div>
+        </div>
+        <div class="item__box">
+          <div class="item__content">
+            <i class="fab fa-css3-alt fa-2xl"></i>
+            <h4 class="item__name">CSS</h4>
+          </div>
+        </div>
+        <div class="item__box">
+          <div class="item__content">
+            <i class="fab fa-js-square fa-2xl"></i>
+            <h4 class="item__name">Javascript</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hobbies" id="hobbies">
+      <h2 class="skills__titulo">Hobbies</h2>
+
+      <div class="skills__contenido">
+        <div class="item__box">
+          <div class="item__content">
+            <i class="fa-solid fa-headphones-simple fa-2xl"></i>
+            <h4 class="item__name">Producir musica</h4>
+          </div>
+        </div>
+        <div class="item__box">
+          <div class="item__content">
+            <i class="fa-solid fa-guitar fa-2xl"></i>
+            <h4 class="item__name">Tocar la guitarra</h4>
+          </div>
+        </div>
+        <div class="item__box">
+          <div class="item__content">
+            <i class="fa-solid fa-hand-fist fa-2xl"></i>
+            <h4 class="item__name">Boxeo</h4>
+          </div>
+        </div>
+        <div class="item__box">
+          <div class="item__content">
+            <i class="fa-solid fa-person-biking fa-2xl"></i>
+            <h4 class="item__name">Ciclismo</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="formacion" id="formacion">
+      <h2 class="formacion__titulo">Formación Académica</h2>
+      <div class="formacion__contenido">
+        <div class="formacion__box">
+          <div class="formacion__imagen"></div>
+        </div>
+        <h4 class="formacion__name">Cursando Alura + Oracle: ONE - Oracle Next Education</h4>
+        <h4 class="formacion__name__año">2022 - Alura (en curso)</h4>
+
+    </section>
+
+    <section class="experiencia" id="experiencia">
+      <h2 class="experiencia__titulo">Experiencia Profesional</h2>
+
+      <article class="experiencia__item--left">
+        <div class="experiencia__imagen--encriptador"></div>
+        <div class="experiencia__contenido--left">
+          <h3 class="experiencia__nombre--left">Encriptador de Texto</h3>
+          <h4 class="experiencia__descripcion--left">Challenge Oracle</h4>
+          <div class="experiencia__botonera--left">
+            <a href="https://github.com/nnfromthewindow/challengeencriptador" target="_blank" rel="noopener" ><button  class="experiencia__boton--repositorio" id="encBtn1repo">Repositorio</button></a>
+            <a href="https://nnfromthewindow.github.io/challengeencriptador/" target="_blank" rel="noopener"><button id="encBtn1demo" class="experiencia__boton" >Ver demo</button></a>
+          </div>
+        </div>
+      </article>
+      <article class="experiencia__item--right">
+        <div class="experiencia__contenido--right">
+          <h3 class="experiencia__nombre--right">
+            Juego del ahorcado creado con HTML y Javascript
+          </h3>
+          <h4 class="experiencia__descripcion--right">Challenge Oracle</h4>
+          <div class="experiencia__botonera--right">
+            <a href="https://github.com/nnfromthewindow/challengeonejuegoahorcado" target="_blank" rel="noopener"><button class="experiencia__boton--repositorio"  id="ahorcBtn1repo" >Repositorio</button></a>
+            <a href="https://nnfromthewindow.github.io/challengeonejuegoahorcado/" target="_blank" rel="noopener"><button class="experiencia__boton" id="ahorcBtn1demo">Ver demo</button></a>
+          </div>
+        </div>
+        <div class="experiencia__imagen--ahorcado"></div>
+      </article>
+      <article class="experiencia__item--left">
+        <div class="experiencia__imagen--encriptador2"></div>
+        <div class="experiencia__contenido--left">
+          <h3 class="experiencia__nombre--left">Encriptador de Texto</h3>
+          <h4 class="experiencia__descripcion--left">Challenge Oracle</h4>
+          <div class="experiencia__botonera--left">
+            <a href="https://github.com/nnfromthewindow/challengeencriptador" target="_blank" rel="noopener" ><button class="experiencia__boton--repositorio" id="encBtn2repo">Repositorio</button></a>
+            <a href="https://nnfromthewindow.github.io/challengeencriptador/" target="_blank" rel="noopener"><button class="experiencia__boton" id="encBtn2demo" >Ver demo</button></a>
+          </div>
+        </div>
+      </article>
+      <article class="experiencia__item--right">
+        <div class="experiencia__contenido--right">
+          <h3 class="experiencia__nombre--right">
+            Juego del ahorcado creado con HTML y Javascript
+          </h3>
+          <h4 class="experiencia__descripcion--right">Challenge Oracle</h4>
+          <div class="experiencia__botonera--right">
+            <a href="https://github.com/nnfromthewindow/challengeonejuegoahorcado" target="_blank" rel="noopener"><button class="experiencia__boton--repositorio" id="ahorcBtn2repo">Repositorio</button></a>
+            <a href="https://nnfromthewindow.github.io/challengeonejuegoahorcado/" target="_blank" rel="noopener"><button class="experiencia__boton" id="ahorcBtn2demo">Ver demo</button></a>
+          </div>
+        </div>
+        <div class="experiencia__imagen--ahorcado2"></div>
+      </article>
+    </section>
+
+    <section class="contacto">
+      <div class="contacto__imagen"></div>
+      <div class="contacto__contenido">
+        <h2 class="contacto__titulo">Contacto</h2>
+        <div class="contacto__referencia">
+          <h4 class="contacto__descripcion">¿Quieres contactarme?</h4>
+          <h4 class="contacto__descripcion">
+            Complete el siguiente formulario y me pondré en contacto con usted
+            lo antes posible.
+          </h4>
+        </div>
+        <form  target="_blank" action="https://formspree.io/f/xwkybkln" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="contacto__campos">
+          <div class="contacto__campo">
+          <h5 class="contacto__input--placeholder">Nombre</h5>
+          <input type="text" name="name" class="contacto__input" required/>
+          </div>
+          <div class="contacto__campo">
+          <h5 class="contacto__input--placeholder">E-mail</h5>
+          <input type="email" name="email" class="contacto__input" required/>
+          </div>
+          <div class="contacto__campo">
+          <h5 class="contacto__input--placeholder">Asunto</h5>
+          <input type="text" name="asunto" class="contacto__input" />
+          </div>
+          <div class="contacto__mensaje">
+            <div class="contacto__mensaje--contenedor">
+            <h5 class="contacto__input--msgholder">Mensaje</h5>
+            <textarea
+            class="contacto__textbox"
+            name="mensaje" required
+            ></textarea>
+            </div>
+            </div>
+          </div>
+          <button type="submit" class="botonEnviar">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h4 class="footer__desarrollador">Desarrollado por Laura López</h4>
+      <h4 class="footer__año">2022</h4>
+    </footer>
+  </body>
 </html>
+
+        
